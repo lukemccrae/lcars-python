@@ -86,13 +86,13 @@
 			<!-- change "display:none" to "display:inline" to see the textarea on the page -->
 			<textarea id="skulpt--input" style="display:none;" cols="40" rows="10">
 im = "python code!!"
-print iAm
+print im
 print "hello world"
 				</textarea
 					  ><br />
 
 					  <!-- this button executes the python code written in the textbox -->
-					  <!-- to make it dissapear add  ~~~ style="display:none;" ~~~ above the type line below  -->
+					  <!-- to make it dissapear add     style="display:none;"    above the type line below  -->
 					  <button
 					  
 					  type="button" onclick="skulptMain()">Run</button>
@@ -101,7 +101,7 @@ print "hello world"
 					<div id="skulpt-canvas--output"></div>
 					<script>
 
-						//the JS on this page is being appended onto these elements
+						//what returns from the python code is being appended onto these elements
 					  const inputRef = document.getElementById("skulpt--input");
 					  const outputRef = document.getElementById("skulpt--output");
 
